@@ -66,16 +66,18 @@ document.getElementById('fast-delivery-charge').addEventListener('click',functio
 
 function promocode(){
         const btn=document.getElementById('promo-code-button');
-       var promocodeText = document.getElementById('promo-code-input').value;
-       var totalPrice=document.getElementById('total-price').innerText;
+        var promocodeText = document.getElementById('promo-code-input').value;
+        var totalPrice=document.getElementById('total-price').innerText;
        if (promocodeText=='stevekaku') {
-      let updateprice=totalPrice*.2;
-      var promoprice=parseFloat(totalPrice-updateprice);
-      console.log(promoprice);
-     // totalPrice.innerText=promoprice;
-      promocodeText.value='';
+      let updateprice=(totalPrice*.2);
+      var promoprice=totalPrice-updateprice;
+      document.getElementById('total-price').innerText=promoprice;
+      totalPrice.innerText=promoprice;
+      document.getElementById('promo-code-input').value='';
       btn.setAttribute("style", "visibility:hidden;");
      
 }
 
 }
+
+
