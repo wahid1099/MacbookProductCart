@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book</title>
+    <!-- css link up -->
+    <link rel="stylesheet" href="style.css"/>
+
+    <!-- bootstrapstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- main content of the website -->
+
+    <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <!-- image of pc -->
+           <img src="images/mac.png" class="img-fluid">
+          </div>
+          <!-- specification of pc -->
+          <div class="col-12 col-md-6 col-lg-6">
+              <h1>Customize your Blue 24-inch iMac with Apple M1 chip</h1>
+              <p>The Apple M1 is an ARM-based system on a chip. It was designed by Apple Inc. as a central processing unit and graphics processing unit for its Macintosh computers and iPad Pro tablets. It was inspired by their Apple A14 Bionic chip</p>
+              <div class="memory mt-4">
+                  <h4>Memory</h4>
+                <button id="baseram" type="button" class="btn btn-outline-secondary">8GB Unified memory</button>
+                <button id="extraram" type="button" class="btn btn-outline-secondary">16GB Unified memory</button>
+              </div>
+              <div class="storage mt-4">
+                <h4>Storage</h4>
+              <button id="basessd" type="button" class="btn btn-outline-secondary">256GB SSD STORAGE</button>
+              <button id="extra-ssd" type="button" class="btn btn-outline-secondary"> 512GB SSD STORAGE</button>
+              <button id="double-extra-ssd" type="button" class="btn btn-outline-secondary"> 1TB SSD STORAGE</button>
+              </div>
+              <div class="storage mt-4">
+                <h4>Choose your delivery Option</h4>
+              <button id="free-delivery-option" type="button" class="btn btn-outline-secondary">Friday, Aug 25 Free Prine Delivery</button>
+              <button id="fast-delivery-charge" type="button" class="btn btn-outline-secondary">Friday, Aug 21 Delivery Charge $20</button>
+             
+            </div>
+            <!-- price tag of pc -->
+            <div class="price-count mt-4">
+                <div class="d-flex">
+                <h6 class="me-5">Best Price</h6> 
+                <h6 class="ms-auto">$<span id="base-price">1299</span></h6> 
+                 
+                </div>
+                <hr/> 
+                <div class="d-flex">
+                    <h6 class="me-5">Extra Memory Cost</h6> 
+                    <h6 class="ms-auto">$<span id="extra-memory-cost">0</span></h6> 
+                     
+                    </div>
+                    <hr/> 
+
+                    <div class="d-flex">
+                        <h6 class="me-5">Extra Storage Cost</h6> 
+                        <h6 class="ms-auto">$<span id="extra-storage-cost">0</span></h6>  
+                         
+                        </div>
+                        <hr/> 
+
+                        <div class="d-flex">
+                            <h6 class="me-5">Delivery Charge</h6> 
+                            <h6 class="ms-auto">$<span id="delivery-charge">0</span></h6>  
+                             
+                            </div>
+                            <hr class="hr"/> 
+                            <div class="d-flex">
+                                <h5 class="me-5">Total Price</h5> 
+                                <h5 class="ms-auto">$<span id="total-cost">1299</span></h5> 
+                                 
+                                </div>
+
+                                <div class="">
+                                    <h6 class="me-5 text-danger mt-5">Add a Promo Code</h6> 
+                                   <div class="d-flex">
+                                    <input id="promo-code-input" type="text" class="form-control w-50" placeholder="promo code" >
+                                    <button id="promo-code-button" onclick="promocode()" type="submit" class="btn btn-danger mb-3">Apply</button>
+                                     
+                                   </div>
+                                   
+                                    </div>
+                                
+            </div>
+           
+          </div>
+        
+          <hr/> 
+          <h2 class="text-center">Total : $<span id="total-price">1299</span></h2>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
